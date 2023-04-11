@@ -1,0 +1,80 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2022-10-18T00:00:00.000Z",
+  "__export_source": "Insomnia",
+  "resources": [
+    {
+      "_id": "req-1",
+      "authentication": {},
+      "body": {
+        "email": "johndoe@example.com",
+        "cpf": "12345678901",
+        "nome": "John Doe"
+      },
+      "headers": {},
+      "method": "POST",
+      "name": "Cadastrar Pessoa",
+      "parameters": [],
+      "url": "http://localhost:8080/pessoas"
+    },
+    {
+      "_id": "req-2",
+      "authentication": {},
+      "body": {
+        "email": "janedoe@example.com",
+        "cpf": "09876543210",
+        "nome": "Jane Doe"
+      },
+      "headers": {},
+      "method": "POST",
+      "name": "Cadastrar Pessoa",
+      "parameters": [],
+      "url": "http://localhost:8080/pessoas"
+    },
+    {
+      "_id": "req-3",
+      "authentication": {},
+      "body": {},
+      "headers": {},
+      "method": "GET",
+      "name": "Listar Pessoas",
+      "parameters": [],
+      "url": "http://localhost:8080/pessoas"
+    },
+    {
+      "_id": "req-4",
+      "authentication": {},
+      "body": {
+        "email": "johndoe@example.com",
+        "cpf": "12345678901",
+        "nome": "John Smith"
+      },
+      "headers": {},
+      "method": "PUT",
+      "name": "Atualizar Pessoa",
+      "parameters": [],
+      "url": "http://localhost:8080/pessoas/1"
+    },
+    {
+      "_id": "req-5",
+      "authentication": {},
+      "body": {},
+      "headers": {},
+      "method": "GET",
+      "name": "Buscar Pessoa",
+      "parameters": [],
+      "url": "http://localhost:8080/pessoas/1"
+    },
+    {
+      "_id": "req-6",
+      "authentication": {},
+      "body": {},
+      "headers": {},
+      "method": "DELETE",
+      "name": "Excluir Pessoa",
+      "parameters": [],
+      "url": "http://localhost:8080/pessoas/2"
+    }
+  ]
+}
