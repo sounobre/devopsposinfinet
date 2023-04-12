@@ -2,6 +2,8 @@ package com.devopsinfinet.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,8 +23,11 @@ import com.devopsinfinet.service.PessoaService;
 @RequestMapping
 
 public class PessoaController {
+	
 	@Autowired
 	private PessoaService pessoaService;
+	
+	private static final Logger LOG = LoggerFactory.getLogger(PessoaController.class);
 
 	@GetMapping("/pessoas")
 	public List<Pessoa> listarPessoas() {
@@ -38,6 +43,9 @@ public class PessoaController {
 	@PostMapping("/pessoas")
 	public ResponseEntity<Pessoa> salvarPessoa(@RequestBody Pessoa pessoa) {
 	    Pessoa pessoaSalva = pessoaService.salvarPessoa(pessoa);
+	    
+	    LOG.info("Pessoa cadastrada - " + pessoa.getNome());
+	    
 	    return ResponseEntity.status(HttpStatus.CREATED).body(pessoaSalva);
 	}
 
