@@ -7,6 +7,8 @@ import zipkin.server.EnableZipkinServer;
 
 
 
+
+
 @SpringBootApplication
 @EnableZipkinServer
 public class DevopsinfinetApplication {
